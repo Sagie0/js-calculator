@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #FFB178;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    height: 600px;
+    width: 300px;
+    background-color: #243441;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 1.5fr 0.5fr 3fr;
+    padding: 40px 15px;
+    gap: 10px;
+    box-shadow: 3px 3px 10px #000000;
+}
+
+.app .topscreen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.app .bottomscreen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #869daf;
+    font-weight: 650
+    font-size: 30px;
+}
+
+.app .numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16.5px
+}
+
+.app .numpad button {
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px #141e28, -2px -2px 5px #91aabd2f ;
+    background-color: #243441;
+    color: #767F86;
+    border: none;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.app .numpad button:active {
+    transform: scale(0.8);
+}
+
+.app .numpad .orange {
+    color: #D07632;
+}
+
+.app .numpad .equal {
+    background-color: #D07632;
+    color: #ffffff;
+    grid-column: 3 / 5;
+}
